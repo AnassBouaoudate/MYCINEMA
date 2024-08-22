@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color:white;
+}
+
+button{
+color:black;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+   background-color:rgb(31, 105, 224);
+}
+
+header, main, section, nav, aside, footer{
+    background-color:transparent ;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header .logo{
+    font-size: 2rem;
+    padding-left: 4em;
+}
+
+header .search{
+    width: 30%;
+}
+
+header .search form{
+    position: relative;
+}
+
+header .search form input{
+    width: 100%;
+    background-color: transparent;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    padding: 10px 20px;
+}
+
+header .search form input:focus{
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+header .search form button{
+    position: absolute;
+    left: 2px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index: 1;
+    background-color: transparent;
+    border:none;
+}
+
+header .btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+}
+
+header .btns .links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .btns .links li{
+    margin: 0 10px;
+}
+
+header .btns .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+
+header .btns .icons li{
+    margin: 0 10px;
+    padding: .3em;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .btns .icons li i{
+    font-size: .8rem;
+}
+
+header .btns .icons li.facebook{
+    background-color: #2C69BE;
+}
+
+header .btns .icons li.email{
+    background-color: #C81F7C;
+}
+
+header .btns .icons li.insta{
+    background-color: #CB11B6;
+}
+
+header .btns .icons li.tweet{
+    background-color: #469CE2;
+}
+
+main.main_body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+main.main_body .side_bar{
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main.main_body .side_bar h7{
+    display: flex;
+    flex-direction: column;
+}
+
+#films{
+    color: black;
+}
+
+.option{
+    color: black;
+}
+
+#button1{
+    color: black;
+}
+#button{
+    color: black;
+}
+
+.search #distributeur {
+    color:black;
+}
+
+.membre{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.historique{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.movie{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black; 
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+select, input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    background-color: transparent;
+    color: white;
+    margin-bottom: 10px;
+}
+
+select:focus, input[type="text"]:focus, input[type="date"]:focus {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+#button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+#button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    margin-top: 50px;
+}
+
+.side_bar {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.side_bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.side_bar a:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
+
+.filtre{
+    width: 85%;
+    padding-left: 10%;
+}
+
+.result{
+    max-height: 15em; /*limit 15 lgn*/
+    overflow-y: auto; /*ajoute defil*/
+    border-radius: 5px;
+    padding-left:10%;
+}
+
+.button{
+    color:black;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: transparent;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+
